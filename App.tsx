@@ -1,20 +1,14 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import React from 'react';
-import type {PropsWithChildren} from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
+  TextInput,
+  TouchableOpacity,
   View,
+  NativeModules
 } from 'react-native';
 
 import {
@@ -24,39 +18,45 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
+import SharpsellShare from './SharpsellShare';
+type SectionProps = {
   title: string;
-}>;
+};
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+function Section({ children, title }: React.PropsWithChildren<SectionProps>): React.ReactElement {
   return (
     <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+      <Text style={styles.sectionTitle}>{title}</Text>
+      <Text style={styles.sectionDescription}>{children}</Text>
     </View>
   );
 }
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+function App(): React.ReactElement {
+  const handleButtonClick = () => {
+    // Call the native function when the button is clicked
+
+    SharpsellShare.createEngine();
+
+    SharpsellShare.initialiseEngine({
+      company_code: "sharpsell-test-uat", // Company code given to you by sharpsell team
+      sharpsell_api_key: "sharpsell-sdk-XOXO-r5CyRDHkGIxw6QViAuGvfbC66xPAlvpm", //  API Key given by the sharpsell team
+      user_unique_id: "b1ae9cc0-92ce-11ee-814d-025832576078", // User unique id or user external id which is the id of the user which you are trying to login
+      fcm_token: "", // Pass the firebase token
+    });
+  };
+
+  const isDarkMode = false; // You can use useColorScheme() here if needed
+
+  const [userId, setUserId] = useState('');
+  const [apiKey, setApiKey] = useState('');
+  const [fcmToken, setFcmToken] = useState('');
+  const [companyCode, setCompanyCode] = useState('');
+
+  const handleSubmit = () => {
+    console.log('Submitted:', { userId, apiKey, fcmToken, companyCode });
+    handleButtonClick();
+  };
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -64,32 +64,28 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} backgroundColor={backgroundStyle.backgroundColor} />
+      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
         <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+        <View style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
+
+          <TextInput style={styles.input} onChangeText={setUserId} value={userId} placeholder="Enter User ID" />
+
+
+          <TextInput style={styles.input} onChangeText={setApiKey} value={apiKey} placeholder="Enter API Key" />
+
+
+          <TextInput style={styles.input} onChangeText={setFcmToken} value={fcmToken} placeholder="Enter FCM Token" />
+
+
+          <TextInput style={styles.input} onChangeText={setCompanyCode} value={companyCode} placeholder="Enter Company Code" />
+
+          <TouchableOpacity onPress={handleSubmit}>
+            <View style={styles.submitButton}>
+              <Text style={styles.submitButtonText}>Submit</Text>
+            </View>
+          </TouchableOpacity>
+
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -97,6 +93,8 @@ function App(): React.JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  // ... (existing styles)
+
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
@@ -110,8 +108,23 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '400',
   },
-  highlight: {
-    fontWeight: '700',
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginVertical: 8,
+    paddingHorizontal: 10,
+  },
+  submitButton: {
+    backgroundColor: '#007BFF',
+    padding: 10,
+    borderRadius: 5,
+    marginVertical: 16,
+    alignItems: 'center',
+  },
+  submitButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
   },
 });
 

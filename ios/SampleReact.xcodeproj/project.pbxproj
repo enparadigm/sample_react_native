@@ -13,6 +13,27 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-SampleReact-SampleReactTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SampleReact-SampleReactTests.a */; };
+		7923BF6B2B8495A900D6E945 /* MoEngage-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7923BF6A2B8495A900D6E945 /* MoEngage-iOS-SDK */; };
+		7923BF6E2B8495DA00D6E945 /* MoEngageInApps in Frameworks */ = {isa = PBXBuildFile; productRef = 7923BF6D2B8495DA00D6E945 /* MoEngageInApps */; };
+		79FBFF982B84741500776C6A /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF942B84741500776C6A /* FMDB.xcframework */; };
+		79FBFF992B84741500776C6A /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF952B84741500776C6A /* FBLPromises.xcframework */; };
+		79FBFF9A2B84741500776C6A /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF962B84741500776C6A /* App.xcframework */; };
+		79FBFF9B2B84741500776C6A /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF972B84741500776C6A /* Flutter.xcframework */; };
+		79FBFF9C2B84741B00776C6A /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF962B84741500776C6A /* App.xcframework */; };
+		79FBFF9D2B84741B00776C6A /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF962B84741500776C6A /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79FBFF9E2B84741B00776C6A /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF952B84741500776C6A /* FBLPromises.xcframework */; };
+		79FBFF9F2B84741B00776C6A /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF952B84741500776C6A /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79FBFFA02B84741B00776C6A /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF972B84741500776C6A /* Flutter.xcframework */; };
+		79FBFFA12B84741B00776C6A /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF972B84741500776C6A /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79FBFFA22B84741B00776C6A /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF942B84741500776C6A /* FMDB.xcframework */; };
+		79FBFFA32B84741B00776C6A /* FMDB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBFF942B84741500776C6A /* FMDB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79FBFFA72B84746A00776C6A /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 79FBFFA62B84746A00776C6A /* SharpsellCore */; };
+		79FBFFAA2B8479A000776C6A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 79FBFFA92B8479A000776C6A /* FirebaseAnalytics */; };
+		79FBFFAC2B8479B900776C6A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 79FBFFAB2B8479B900776C6A /* FirebaseCrashlytics */; };
+		79FBFFAE2B8479B900776C6A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 79FBFFAD2B8479B900776C6A /* FirebaseMessaging */; };
+		79FBFFB32B847AC600776C6A /* SharpsellCoreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBFFB22B847AC600776C6A /* SharpsellCoreSwift.swift */; };
+		79FBFFB52B847DC800776C6A /* SharpsellCoreSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FBFFB42B847DC800776C6A /* SharpsellCoreSwift.m */; };
+		79FBFFB72B8489D200776C6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79FBFFB62B8489D200776C6A /* GoogleService-Info.plist */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +46,23 @@
 			remoteInfo = SampleReact;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79FBFFA42B84741B00776C6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79FBFFA32B84741B00776C6A /* FMDB.xcframework in Embed Frameworks */,
+				79FBFFA12B84741B00776C6A /* Flutter.xcframework in Embed Frameworks */,
+				79FBFF9F2B84741B00776C6A /* FBLPromises.xcframework in Embed Frameworks */,
+				79FBFF9D2B84741B00776C6A /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* SampleReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +79,14 @@
 		5709B34CF0A7D63546082F79 /* Pods-SampleReact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleReact.release.xcconfig"; path = "Target Support Files/Pods-SampleReact/Pods-SampleReact.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-SampleReact-SampleReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleReact-SampleReactTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleReact-SampleReactTests/Pods-SampleReact-SampleReactTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SampleReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleReact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FBFF942B84741500776C6A /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FMDB.xcframework; sourceTree = "<group>"; };
+		79FBFF952B84741500776C6A /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBLPromises.xcframework; sourceTree = "<group>"; };
+		79FBFF962B84741500776C6A /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
+		79FBFF972B84741500776C6A /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		79FBFFAF2B847A3800776C6A /* SampleReact-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleReact-Bridging-Header.h"; sourceTree = "<group>"; };
+		79FBFFB22B847AC600776C6A /* SharpsellCoreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpsellCoreSwift.swift; sourceTree = "<group>"; };
+		79FBFFB42B847DC800776C6A /* SharpsellCoreSwift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharpsellCoreSwift.m; sourceTree = "<group>"; };
+		79FBFFB62B8489D200776C6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SampleReact/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-SampleReact-SampleReactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleReact-SampleReactTests.release.xcconfig"; path = "Target Support Files/Pods-SampleReact-SampleReactTests/Pods-SampleReact-SampleReactTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -51,7 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FBFF9B2B84741500776C6A /* Flutter.xcframework in Frameworks */,
+				79FBFF982B84741500776C6A /* FMDB.xcframework in Frameworks */,
 				7699B88040F8A987B510C191 /* libPods-SampleReact-SampleReactTests.a in Frameworks */,
+				79FBFF992B84741500776C6A /* FBLPromises.xcframework in Frameworks */,
+				79FBFF9A2B84741500776C6A /* App.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +109,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FBFFAE2B8479B900776C6A /* FirebaseMessaging in Frameworks */,
+				79FBFFAA2B8479A000776C6A /* FirebaseAnalytics in Frameworks */,
+				79FBFFA02B84741B00776C6A /* Flutter.xcframework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-SampleReact.a in Frameworks */,
+				7923BF6B2B8495A900D6E945 /* MoEngage-iOS-SDK in Frameworks */,
+				79FBFFA22B84741B00776C6A /* FMDB.xcframework in Frameworks */,
+				79FBFF9C2B84741B00776C6A /* App.xcframework in Frameworks */,
+				79FBFFAC2B8479B900776C6A /* FirebaseCrashlytics in Frameworks */,
+				7923BF6E2B8495DA00D6E945 /* MoEngageInApps in Frameworks */,
+				79FBFFA72B84746A00776C6A /* SharpsellCore in Frameworks */,
+				79FBFF9E2B84741B00776C6A /* FBLPromises.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +152,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				79FBFFB22B847AC600776C6A /* SharpsellCoreSwift.swift */,
+				79FBFFB42B847DC800776C6A /* SharpsellCoreSwift.m */,
 			);
 			name = SampleReact;
 			sourceTree = "<group>";
@@ -99,6 +161,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79FBFF962B84741500776C6A /* App.xcframework */,
+				79FBFF952B84741500776C6A /* FBLPromises.xcframework */,
+				79FBFF972B84741500776C6A /* Flutter.xcframework */,
+				79FBFF942B84741500776C6A /* FMDB.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-SampleReact.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-SampleReact-SampleReactTests.a */,
@@ -116,12 +182,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				79FBFFB62B8489D200776C6A /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* SampleReact */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SampleReactTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				79FBFFAF2B847A3800776C6A /* SampleReact-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -183,12 +251,21 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				79FBFFA42B84741B00776C6A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SampleReact;
+			packageProductDependencies = (
+				79FBFFA62B84746A00776C6A /* SharpsellCore */,
+				79FBFFA92B8479A000776C6A /* FirebaseAnalytics */,
+				79FBFFAB2B8479B900776C6A /* FirebaseCrashlytics */,
+				79FBFFAD2B8479B900776C6A /* FirebaseMessaging */,
+				7923BF6A2B8495A900D6E945 /* MoEngage-iOS-SDK */,
+				7923BF6D2B8495DA00D6E945 /* MoEngageInApps */,
+			);
 			productName = SampleReact;
 			productReference = 13B07F961A680F5B00A75B9A /* SampleReact.app */;
 			productType = "com.apple.product-type.application";
@@ -206,7 +283,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -219,6 +296,12 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				79FBFFA52B84746A00776C6A /* XCRemoteSwiftPackageReference "SharpsellCore" */,
+				79FBFFA82B8474D300776C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7923BF692B8495A900D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-SDK" */,
+				7923BF6C2B8495DA00D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-InApps" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +326,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				79FBFFB72B8489D200776C6A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +477,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				79FBFFB52B847DC800776C6A /* SharpsellCoreSwift.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				79FBFFB32B847AC600776C6A /* SharpsellCoreSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-SampleReact-SampleReactTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -439,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-SampleReact-SampleReactTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = SampleReactTests/Info.plist;
@@ -466,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SampleReact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,6 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SampleReact;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleReact-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -493,6 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				INFOPLIST_FILE = SampleReact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SampleReact;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleReact-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,6 +787,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7923BF692B8495A900D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moengage/MoEngage-iOS-SDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.8.2;
+			};
+		};
+		7923BF6C2B8495DA00D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-InApps" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moengage/MoEngage-iOS-InApps";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.3;
+			};
+		};
+		79FBFFA52B84746A00776C6A /* XCRemoteSwiftPackageReference "SharpsellCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/enparadigm/SharpsellCore";
+			requirement = {
+				branch = mhirl;
+				kind = branch;
+			};
+		};
+		79FBFFA82B8474D300776C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7923BF6A2B8495A900D6E945 /* MoEngage-iOS-SDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7923BF692B8495A900D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-SDK" */;
+			productName = "MoEngage-iOS-SDK";
+		};
+		7923BF6D2B8495DA00D6E945 /* MoEngageInApps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7923BF6C2B8495DA00D6E945 /* XCRemoteSwiftPackageReference "MoEngage-iOS-InApps" */;
+			productName = MoEngageInApps;
+		};
+		79FBFFA62B84746A00776C6A /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79FBFFA52B84746A00776C6A /* XCRemoteSwiftPackageReference "SharpsellCore" */;
+			productName = SharpsellCore;
+		};
+		79FBFFA92B8479A000776C6A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79FBFFA82B8474D300776C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		79FBFFAB2B8479B900776C6A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79FBFFA82B8474D300776C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		79FBFFAD2B8479B900776C6A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79FBFFA82B8474D300776C6A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
